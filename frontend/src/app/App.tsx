@@ -1,10 +1,8 @@
-import { useState } from 'react'
+import { RouterProvider } from "react-router-dom";
+import { router } from "./router";
 
 function App() {
-
-  return (
-    <p className='text-amber-300'>HELLO!</p>
-  )
+  return <RouterProvider router={router} />;
 }
 
-export default App
+export default App;

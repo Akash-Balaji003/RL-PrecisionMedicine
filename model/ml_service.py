@@ -35,6 +35,7 @@ class PatientInput(BaseModel):
 
 @app.post("/recommend")
 def recommend(patient: PatientInput):
+    print("Received patient data:", patient)
     result = recommend_treatment(
         age=patient.age,
         gender=patient.gender,
