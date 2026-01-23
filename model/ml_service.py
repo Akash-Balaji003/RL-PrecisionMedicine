@@ -48,3 +48,7 @@ def recommend(patient: PatientInput):
         encoders=encoders
     )
     return result
+
+@app.get("/test")
+def test():
+    return {"Test": "Working"}
