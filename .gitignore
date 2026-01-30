@@ -3,3 +3,4 @@
 /model/dataset
 /.metadata/
 Backend/.metadata/
+Backend/src/main/resources/application.properties
